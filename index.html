@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Lauro Calixto Júnior</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho fixo com menu de navegação por âncoras exigido pela atividade -->
+    <header class="cabecalho">
+        <nav>
+            <ul class="navegacao">
+                <li><a class="item-navegacao" href="#home">Home</a></li>
+                <li><a class="item-navegacao" href="#sobre">Sobre mim</a></li>
+                <li><a class="item-navegacao" href="#formacao">Formação</a></li>
+                <li><a class="item-navegacao" href="#projetos">Portfólio</a></li>
+                <li><a class="item-navegacao" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home-->
+    <section id="home" class="secao-home">
+        <div class="conteudo-home">
+            <h1>Olá, eu sou Lauro Calixto Júnior</h1>
+            <span class="subtitulo">Desenvolvedor de Software & Sistemas Embarcados</span>
+        </div>
+    </section>
+
+    <!-- Sobre Mim  -->
+    <section id="sobre" class="secao-sobre">
+        <div class="container-sobre">
+            <div class="texto-sobre">
+                <h2>Sobre mim</h2>
+                <p class="paragrafo-sobre">
+                    "Olá! Sou o Lauro. Sou apaixonado por tecnologia e fascinado por entender como as coisas funcionam 
+                    por trás dos códigos, desde a programação web até sistemas embarcados. 
+                    Gosto de transformar ideias em projetos práticos, resolver problemas desafiadores
+                    e aprender constantemente, sempre buscando criar soluções eficientes e inovadoras."
+                </p>
+            </div>
+            <div class="bloco-imagens">
+                <img class="imagem-perfil" src="img/eu.png" alt="Foto de Lauro Calixto Júnior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação  -->
+    <section id="formacao" class="secao-formacao">
+        <h2>Formação Educacional & Cursos</h2>
+        <p class="subtitulo-formacao">Minha trajetória acadêmica e aperfeiçoamento contínuo</p>
+
+        <div class="grid-formacao">
+            <div class="card-formacao">
+                <h3>Bacharelado em Sistemas de Informação</h3>
+                <span class="tag-tech">Centro Universitário Internacional (UNINTER)</span>
+                <p>Cursando • Previsão de conclusão para janeiro de 2028.</p>
+            </div>
+
+            <div class="card-formacao">
+                <h3>Desenvolvimento Web & Programação</h3>
+                <span class="tag-tech">Cursos e Certificações (Udemy / FreeCodeCamp)</span>
+                <p>Capacitação sólida em HTML5, CSS3, JavaScript, C++ e lógica de programação voltada para sistemas web e embarcados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio  -->
+    <section id="projetos" class="secao-projetos">
+        <h2>Portfólio</h2>
+        <p class="subtitulo-projetos">Trabalhos realizados na indústria e projetos acadêmicos</p>
+
+        <div class="grid-projetos">
+            <!-- Projeto 1 -->
+            <div class="card-projeto">
+                <h3>Processador de Áudio FMP-500D</h3>
+                <span class="tag-tech">Teletronics • ESP32 • UART • C++</span>
+                <p>
+                    Responsável pelo desenvolvimento do sistema de controle e da interface do usuário (UI) 
+                    do novo Processador de Áudio de 5 Bandas da Teletronics. 
+                    Foco na fluidez de navegação do display e experiência do operador.
+                </p>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="card-projeto">
+                <h3>Transmissores FM - Linha Versatile (SP100)</h3>
+                <span class="tag-tech">Teletronics • Sistemas Embarcados • C++</span>
+                <p>
+                    Atuação no desenvolvimento de software embarcado para transmissores de FM de alta performance, 
+                    garantindo estabilidade operacional e interfaces robustas para emissoras.
+                </p>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="card-projeto">
+                <h3>Medis - Medical AI Solutions (TCC)</h3>
+                <span class="tag-tech">IA • Desenvolvimento Web • Full Stack</span>
+                <p>
+                    Projeto ainda em desenvolvimento,Trabalho de Conclusão de Curso (TCC) 
+                    focado no desenvolvimento de uma inteligência artificial
+                    voltada para o ecossistema médico, integrando tecnologias web modernas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao-contato">
+        <h2>Contato</h2>
+        <p class="subtitulo-contato">Envie uma mensagem diretamente para mim:</p>
+
+        <div class="container-formulario">
+            <form id="formContato">
+                <div class="grupo-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="exemplo@dominio.com">
+                </div>
+
+                <div class="grupo-input">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+            
+            <!-- Links GITHUB -->
+            <div class="info-extra-contato">
+                <p>GitHub: <a href="https://github.com/LauroJuniior" target="_blank" class="link-perfil">github.com/LauroJuniior</a></p>
+                <p>E-mail direto: laurocalixtojuniorkalixto@gmail.com | Tel: (35) 9.9738-9486</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- script de validação  -->
+    <script src="js/script.js"></script>
+</body>
+</html>
