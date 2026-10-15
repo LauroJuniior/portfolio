@@ -120,8 +120,8 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
-.texto-sobre h2::before { content: "<"; color: #38bdf8; }
-.texto-sobre h2::after { content: "/>"; color: #38bdf8; }
+.texto-sobre h2::before, .secao-contato h2::before { content: "<"; color: #38bdf8; }
+.texto-sobre h2::after, .secao-contato h2::after { content: "/>"; color: #38bdf8; }
 
 .paragrafo-sobre { font-size: 16px; line-height: 1.8; color: #94a3b8; }
 .bloco-imagens { display: flex; justify-content: center; flex: 1; min-width: 250px; }
@@ -140,6 +140,7 @@ body {
     color: #94a3b8;
     margin-bottom: 40px;
     font-size: 16px;
+    text-align: center;
 }
 
 .grid-formacao, .grid-projetos {
@@ -186,70 +187,48 @@ body {
     line-height: 1.6;
 }
 
-/* Seção de Contato com Formulário Estilizado */
-.container-formulario {
-    background: #0f172a;
-    border: 1px solid #1e293b;
-    border-radius: 16px;
-    padding: 40px;
-    max-width: 700px;
-    margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+/* Seção de Contato & Redes Sociais Centralizada */
+.secao-contato {
+    text-align: center;
 }
 
-.grupo-input {
-    margin-bottom: 20px;
-    text-align: left;
+.container-redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+    flex-wrap: wrap;
 }
 
-.grupo-input label {
-    display: block;
-    color: #cbd5e1;
-    margin-bottom: 8px;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.grupo-input input, .grupo-input textarea {
-    width: 100%;
-    padding: 12px;
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 8px;
-    color: #f8fafc;
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.grupo-input input:focus, .grupo-input textarea:focus {
-    border-color: #38bdf8;
-}
-
-.btn-enviar {
-    background-color: #38bdf8;
-    color: #0b0f19;
+.btn-rede {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 12px 24px;
-    border: none;
     border-radius: 8px;
-    font-size: 16px;
-    font-weight: 700;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.btn-enviar:hover {
-    background-color: #7dd3fc;
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+.btn-rede:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
+
+/* Cores específicas das redes */
+.btn-rede.linkedin { background-color: #0077b5; }
+.btn-rede.github   { background-color: #333333; }
+.btn-rede.facebook { background-color: #1877f2; }
 
 .info-extra-contato {
     margin-top: 30px;
     text-align: center;
     font-size: 14px;
     color: #94a3b8;
+    line-height: 1.6;
 }
 
 .link-perfil {
