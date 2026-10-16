@@ -143,13 +143,28 @@ body {
     text-align: center;
 }
 
-.grid-formacao, .grid-projetos {
+.grid-projetos {
+    display: grid;
+    /* Define 4 colunas em telas grandes, ou 2 em telas médias, e 1 no celular */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    align-items: stretch; /* Faz todos os cards da mesma linha terem a mesma altura */
+}
+
+.card-projeto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%; /* Mantém o card preenchendo a altura máxima */
+}
+
+.grid-formacao {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
-.card-formacao, .card-projeto {
+.card-formacao {
     background: #0f172a;
     border: 1px solid #1e293b;
     border-radius: 12px;
