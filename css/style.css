@@ -145,9 +145,15 @@ body {
 
 .grid-projetos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
     align-items: stretch; 
+}
+
+@media (max-width: 768px) {
+    .grid-projetos {
+        grid-template-columns: 1fr;
+    }
 }
 
 .grid-formacao {
